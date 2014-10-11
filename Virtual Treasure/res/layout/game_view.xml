@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/game_parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black" >
+
+        <TextView
+            android:id="@+id/score_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"
+            android:text="ScoreP1:    " >
+        </TextView>
+        <TextView
+            android:id="@+id/opp_score_label"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/score_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="@android:color/white"
+            android:text="ScoreP2:    " >
+        </TextView>
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/score_label"
+            android:textColor="@android:color/white"
+            android:text="0" >
+        </TextView>
+
+        <Button
+            android:id="@+id/pause_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="pauseButtonClicked"
+            style="@style/ButtonText" 
+            android:background="@drawable/redbutton"
+            android:text="Pause"/>
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:text="0" />
+        <Button android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:id="@+id/ok_button"
+			android:enabled="false"
+  		    android:text="OK"
+  		    style="@style/ButtonText" 
+            android:background="@drawable/redbutton"
+  		    android:layout_below="@+id/pause_button"
+  		  	android:onClick="okButtonClicked"
+  		  	android:layout_centerHorizontal="true"/>
+
+  		  <Button
+        	android:id="@+id/button1"
+        	android:layout_width="100dp"
+        	style="@style/ButtonText" 
+            android:background="@drawable/redbutton"
+       	 	android:layout_height="wrap_content"
+        	android:onClick="clearButtonClicked"
+        	android:layout_below="@+id/ok_button"
+        	android:text="Clear" 
+        	android:layout_centerHorizontal="true"/>
+		 <ScrollView
+		     android:id="@+id/scroller"
+    		 android:layout_width="100dp"
+    		 android:layout_height="100dp"
+    		 android:layout_alignParentLeft="true"
+    		 android:layout_alignTop="@+id/ok_button"
+  		     android:layout_toLeftOf="@+id/ok_button"
+    		 android:fillViewport="true">
+		 <TextView
+             android:id="@+id/playerWordList"
+  		     android:layout_width="wrap_content"
+  	         android:layout_height="fill_parent"
+  	         android:textColor="@android:color/white"
+             android:text=""
+  		     />
+		 </ScrollView>
+
+		 <ScrollView
+		     android:id="@+id/scroller2"
+    		 android:layout_width="100dp"
+    		 android:layout_height="100dp"
+    		 android:layout_alignParentRight="true"
+		     android:layout_below="@+id/pause_button"
+    		 android:fillViewport="true">
+		 <TextView
+		     android:id="@+id/oppWordList"
+		     android:layout_width="wrap_content"
+		     android:layout_height="fill_parent"
+		     android:textColor="@android:color/white"
+		     android:text="" />
+		 </ScrollView>
+
+    </RelativeLayout>
+
+    
+	</LinearLayout>

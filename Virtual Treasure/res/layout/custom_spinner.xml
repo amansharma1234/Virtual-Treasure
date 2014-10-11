@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/blackbackground"
+    android:paddingLeft="10sp"
+    android:paddingTop="5sp"
+    android:paddingBottom="5sp">
+    <ImageView
+        android:layout_width="30sp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="Type Image"
+        android:id="@+id/ivSpinnerType"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10sp"
+        android:text="Type"
+        android:textColor="@android:color/white"
+        android:id="@+id/tvSpinnerType"/>
+</LinearLayout>

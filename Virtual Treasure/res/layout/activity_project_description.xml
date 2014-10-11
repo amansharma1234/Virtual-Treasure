@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<ScrollView 
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bProjectDescriptionNext">
+	   <TextView 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:padding="15sp"
+	       android:text="@string/final_project_description"/>    
+	</ScrollView>
+	<Button 
+	    android:id="@+id/bProjectDescriptionNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:paddingLeft="30sp"
+        android:paddingRight="30sp"
+        android:layout_margin="10sp"
+        android:layout_gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/blackbutton"
+        android:textColor="@android:color/white"
+        android:onClick="onPDNext"
+        />    
+</RelativeLayout>

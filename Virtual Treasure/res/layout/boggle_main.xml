@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/boggle_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/boggleimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dip"
+        android:src="@drawable/boggle"/>
+    
+    <Button
+        android:id="@+id/resume_game_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="@style/ButtonText" 
+        android:background="@drawable/blackbutton"
+        android:text="Resume Game" />
+    
+    <Button
+        android:id="@+id/new_game_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        style="@style/ButtonText" 
+        android:background="@drawable/blackbutton"
+        android:text="New Game" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="ackButtonClicked"
+        style="@style/ButtonText" 
+        android:background="@drawable/blackbutton"
+        android:text="Acknowledgments" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="rulesButtonClicked"
+        android:text="Top Scores"
+        style="@style/ButtonText" 
+        android:background="@drawable/blackbutton" />
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:onClick="rulesButtonClicked"
+        android:text="Rules"
+        style="@style/ButtonText" 
+        android:background="@drawable/blackbutton" />
+
+  
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        style="@style/ButtonText" 
+        android:background="@drawable/blackbutton" />
+    <EditText
+        android:id="@+id/myEditText"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_width="fill_parent" />
+
+</LinearLayout>

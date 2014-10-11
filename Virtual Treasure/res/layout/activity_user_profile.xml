@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical">
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/rlUserProfile"
+    		android:padding="20sp">
+	        <ImageView 
+	            android:id="@+id/ivUPProfilePic"
+		        android:layout_width="200sp"
+		        android:layout_height="200sp"
+		        android:scaleType="centerCrop"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"    
+		        android:background="@drawable/img_user_profile"/>"
+
+	        <TextView
+		        android:id="@+id/tvUPUserName"
+		        android:layout_width="match_parent"
+		        android:layout_height="40sp"
+		        android:background="#BB000000"
+		        android:textColor="@android:color/white"
+		        android:layout_alignParentBottom="true"
+		        android:layout_centerHorizontal="true"
+		        android:text="Welcome"
+		        android:textStyle="bold|italic"
+		        android:textSize="25sp"
+		        android:gravity="center_horizontal|bottom"/>
+	        <ProgressBar
+	            android:id="@+id/pbUPPhoto" 
+	            android:layout_width="30sp"
+		        android:layout_height="30sp"
+		        android:layout_centerInParent="true"/>
+	    </RelativeLayout>
+	    
+	    <Button
+	        android:id="@+id/buttonUPFindTreasure"
+	        style="@style/ButtonText"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:background="@drawable/blackbutton"
+	        android:onClick="onUPFindTreasureClicked"
+	        android:text="Find Treasure" />
+	
+	    <Button
+            android:id="@+id/buttonUPMapsHelp"
+            style="@style/ButtonText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/blackbutton"
+            android:onClick="onUPMapsHelpClicked"
+            android:text="Maps Help" />
+	    
+	    <Button
+            android:id="@+id/buttonUPCameraHelp"
+            style="@style/ButtonText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/blackbutton"
+            android:onClick="onUPCameraHelpClicked"
+            android:text="Camera Help" />
+	    
+	    <Button
+            android:id="@+id/buttonUPLogout"
+            style="@style/ButtonText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/blackbutton"
+            android:onClick="onUPLogoutClicked"
+            android:text="Logout" />
+    
+    </LinearLayout>
+</ScrollView>

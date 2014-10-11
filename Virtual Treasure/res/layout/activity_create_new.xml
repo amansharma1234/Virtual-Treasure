@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:stretchColumns="1" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:text="Create Treasure"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Latitude :"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/etNewLatitude"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:enabled="false"
+                android:focusable="false"
+                android:text="Latitude" />
+"
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Longitude :"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/etNewLongitude"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:enabled="false"
+                android:focusable="false"
+                android:text="Longitude" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Message Type :"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/spNewMessageType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3sp"
+                android:layout_marginLeft="17sp"
+                android:layout_marginRight="2sp"
+                android:layout_marginTop="3sp"
+                android:background="#343434" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Content :"
+                android:textColor="@android:color/white" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_marginLeft="15sp"
+                android:background="#000000"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/etNewMessage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:maxLength="140"
+                    android:scrollHorizontally="true" />
+            </ScrollView>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Private Message :"
+                android:textColor="@android:color/white" />
+
+            <CheckBox
+                android:id="@+id/cbNewIsPrivate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Recipients :"
+                android:textColor="@android:color/white" />
+
+            <ScrollView
+                android:layout_width="20sp"
+                android:layout_height="80sp"
+                android:layout_marginLeft="15sp"
+                android:background="#000000"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/etNewRecipients"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    
+                    android:gravity="top"
+                    android:lines="10" />
+            </ScrollView>
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:background="@drawable/blackbutton"
+                android:text="Add Recipient"
+                android:textColor="@android:color/white"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/addRecipient"
+                android:layout_width="wrap_content"
+                android:layout_height="40sp"
+                android:layout_marginLeft="15sp"
+                android:background="@drawable/blackbutton"
+                android:text="Add Recipient"
+                android:textColor="@android:color/white"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_marginTop="5sp"
+            android:background="@drawable/blackbutton"
+            android:onClick="onNewCreateButtonClicked"
+            android:text="Create"
+            android:textColor="@android:color/white" />
+    </TableLayout>
+
+</LinearLayout>

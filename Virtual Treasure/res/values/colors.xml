@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+   <color name="background">#3500ffff</color>
+   <color name="puzzle_background">#ffe6f0ff</color>
+   <color name="puzzle_hilite">#ffffffff</color>
+   <color name="puzzle_light">#64c6d4ef</color>
+   <color name="puzzle_dark">#6456648f</color>
+   <color name="puzzle_foreground">#ff000000</color>
+   <color name="puzzle_hint_0">#64ff0000</color>
+   <color name="puzzle_hint_1">#6400ff80</color>
+   <color name="puzzle_hint_2">#2000ff80</color>
+   <color name="puzzle_selected">#64ff8000</color>
+   <color name="boggle_background_main_1">#0066cc</color>
+   <color name="boggle_background">#ffffff</color>
+   <color name="boggle_hilite">#CC3232</color>
+   <color name="boggle_light">#64c6d4ef</color>
+   <color name="boggle_dark">#CC3232</color>
+   <color name="boggle_foreground">#CC3232</color>
+   <color name="boggle_selected_1">#64ff8000</color>
+   
+   <color name="boggle_hint_1">#65FEE8D6</color>
+   <color name="boggle_selected">#20EE7600</color>
+   <color name="boggle_background_main">#FF7216</color>
+   
+   <color name="link_highlight">#66FFFF</color>
+</resources>

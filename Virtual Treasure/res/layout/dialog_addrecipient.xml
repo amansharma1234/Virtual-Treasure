@@ -1,0 +1,29 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center">
+	    <TextView
+	        android:text="Add Recipient"
+	        android:gravity="center"
+	        style="@style/Text"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:scaleType="center"
+	        android:background="#FFFFBB33"
+	        android:contentDescription="@string/app_name" />
+	    <EditText
+	        android:id="@+id/recipientname"
+	        android:inputType="textEmailAddress"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="16dp"
+	        android:layout_marginLeft="4dp"
+	        android:layout_marginRight="4dp"
+	        android:layout_marginBottom="4dp"
+	        android:hint="Recipient Name" />
+	</LinearLayout>
+</ScrollView>
